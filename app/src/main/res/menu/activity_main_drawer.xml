@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_calendar"
+            android:icon="@android:drawable/ic_menu_month"
+            android:title="일정관리" />
+        <item
+            android:id="@+id/nav_timer"
+            android:icon="@android:drawable/ic_menu_recent_history"
+            android:title="타이머" />
+        <item
+            android:id="@+id/nav_memo"
+            android:icon="@android:drawable/ic_menu_edit"
+            android:title="메모" />
+        <item
+            android:id="@+id/nav_vocabulary"
+            android:icon="@android:drawable/ic_input_get"
+            android:title="영어단어장" />
+        <item
+            android:id="@+id/nav_translate"
+            android:icon="@android:drawable/ic_menu_sort_alphabetically"
+            android:title="번역기" />
+        <item
+            android:id="@+id/nav_gps"
+            android:icon="@android:drawable/ic_menu_mylocation"
+            android:title="GPS" />
+    </group>
+</menu>
