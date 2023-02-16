@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="50dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_back"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit_text_input"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/text_view_countdown"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/gmarketsans_medium"
+                android:hint="Minutes"
+                android:inputType="number"
+                android:maxLength="4" />
+
+            <Button
+                android:id="@+id/button_set"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignRight="@id/edit_text_input"
+                android:layout_toEndOf="@id/edit_text_input"
+                android:background="@drawable/btn_back"
+                android:fontFamily="@font/gmarketsans_medium"
+                android:text="Set" />
+
+        </LinearLayout>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/text_view_countdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gmarketsans_medium"
+                android:text="10:00"
+                android:textColor="@color/black"
+                android:textSize="50dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button_start_pause"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@id/text_view_countdown"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/btn_back"
+                android:fontFamily="@font/gmarketsans_medium"
+                android:text="start" />
+
+            <Button
+                android:id="@+id/button_reset"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@id/text_view_countdown"
+                android:layout_marginStart="11dp"
+                android:layout_toEndOf="@id/button_start_pause"
+                android:background="@drawable/btn_back"
+                android:fontFamily="@font/gmarketsans_medium"
+                android:text="reset"
+                android:visibility="invisible"
+                tools:visibility="visible" />
+        </TableRow>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Toeic"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/background"
+        android:fontFamily="@font/gmarketsans_medium"
+        android:text="TOEIC"
+        android:textSize="17dp" />
+
+
+    <Button
+        android:id="@+id/History"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/background2"
+        android:baselineAligned="false"
+        android:fontFamily="@font/gmarketsans_medium"
+        android:text="한국사능력검정"
+        android:textSize="17dp" />
+
+    <Button
+        android:id="@+id/Itex"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/background"
+        android:fontFamily="@font/gmarketsans_medium"
+        android:text="IT자격증\n\n(컴퓨터활용능력, 정보처리기사 등)"
+        android:textSize="17dp" />
+</LinearLayout>
+
+

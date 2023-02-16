@@ -8,18 +8,47 @@
     <fragment
         android:id="@+id/nav_home"
         android:name="com.example.studyapp.ui.home.HomeFragment"
-        android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.studyapp.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_testcal"
+        android:name="com.example.studyapp.ui.testcal.TestCalFragment"
+        tools:layout="@layout/fragment_test_cal" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
+        android:id="@+id/nav_timer"
+        android:name="com.example.studyapp.ui.timer.TimerFragment"
+        tools:layout="@layout/fragment_timer" />
+
+    <fragment
+        android:id="@+id/nav_memo"
+        android:name="com.example.studyapp.ui.note.NoteFragment"
+        tools:layout="@layout/fragment_note" />
+
+    <fragment
+        android:id="@+id/nav_stdinfo"
+        android:name="com.example.studyapp.ui.stdinfo.StudyinformationFragment"
+        tools:layout="@layout/fragment_studyinformation" />
+
+    <fragment
+        android:id="@+id/nav_test"
+        android:name="com.example.studyapp.ui.it.QuestionFragment"
+        tools:layout="@layout/fragment_question" />
+
+    <fragment
+        android:id="@+id/nav_voca"
+        android:name="com.example.studyapp.ui.voca.VocaFragment"
+        tools:layout="@layout/fragment_voca" />
+
+    <fragment
+        android:id="@+id/nav_translate"
         android:name="com.example.studyapp.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_place"
+        android:name="com.example.studyapp.ui.place.PlaceFragment"
+        tools:layout="@layout/fragment_place" />
+
+
 </navigation>
